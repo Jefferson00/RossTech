@@ -25,7 +25,7 @@
   }
   
   header{
-    background: url('assets/Rectangle1.svg');
+    background: url('assets/header-1.svg');
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,16 +73,29 @@
     position: absolute;
     right: 120px;
     top: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-.main-img img{
-      
-}
+  .main-tittle{
+    margin-right: 20px;
+  }
+
+  .main-tittle h1{
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  .main-tittle p{
+    font-size: 24px;
+    line-height: 29px;
+  }
 
 .destaques{
     display: flex;
     width: 80%;
-    margin: 150px auto;
+    margin: 550px auto 270px;
 }
 
 .destaques-cards{
@@ -107,9 +120,97 @@
 }
 
 .sobre{
-
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .sobre-img{
-    background: url('assets/sobre.png');
+  position: relative;
+  width: 399px;
+}
+
+.sobre-img img{
+  position: absolute;
+}
+
+.background-sobre-img{
+  background: white;
+  position: absolute;
+  width: 100%;
+  filter: opacity(0.5);
+  height: 353px;
+}
+
+.background-sobre-img-2{
+  background: #E6223A;
+  position: absolute;
+  width: 100%;
+  height: 353px;
+  z-index: -1;
+    transform: translate(-19px, -19px);
+}
+
+.sobre-txt{
+  position: absolute;
+  left: 50%;
+}
+
+
+.produtos{
+  display: flex;
+  width: 80%;
+  margin: 500px auto;
+  position: relative;
+}
+
+.produtos-txt{
+  margin-right: 131px;
+  width: 50%;
+}
+
+.produtos-container{
+  display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 60px;
+    width: 40%;
+    max-width: 360px;
+    max-height: 435px;
+    overflow: hidden;
+}
+
+.produtos-card-item{
+  background: linear-gradient(115.59deg, #E6223A -25.24%, #2E3956 135.37%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 1s;
+}
+
+.produtos-card-item h3{
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+}
+
+.setas{
+  display: flex;
+  justify-content: space-between;
+}
+
+.setas span{
+  cursor: pointer;
+}
+
+footer{
+  height: 80px;
+  width: 100%;
+  background: #1B2234;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 235px;
+
 }
