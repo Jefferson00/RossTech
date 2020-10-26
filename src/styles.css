@@ -3,6 +3,8 @@
     padding: 0; 
     box-sizing: border-box; 
   }
+
+ 
   
   body{
       font-family: 'Roboto', sans-serif;
@@ -203,6 +205,125 @@
 
 .setas span{
   cursor: pointer;
+}
+
+.parceiros{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.parceiros-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 40px;
+}
+
+.parceiros-text{
+  text-align: center;
+}
+
+.parceiros-item img{
+    max-width: 100%;
+}
+
+.governo{
+  width: 80%;
+  margin: 280px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.governo-img img{
+  max-width: 100%;
+}
+
+.governo-text{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn{
+  border: none;
+  min-height: 45px;
+  min-width: 277px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn.download{
+  background: #BA1D30;
+  color: white;
+}
+
+.btn.download:hover{
+  background: #831421;
+}
+
+
+.contato{
+  width: 80%;
+  margin: 277px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato-text{
+
+}
+
+.contato-form{
+width: 100%;
+}
+
+.contato-form form{
+display: flex;
+}
+
+.contato-form fieldset{
+  border: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form input,
+.contato-form textarea {
+  background: #E9E9E9;
+  border: 1px solid #AFAFAF;
+  min-height: 28px;
+  margin: 49px 31px;
+  padding: 6px;
+}
+
+.contato-form textarea{
+  min-height: 181px;
+}
+
+.contato-form input[type="submit"]{
+  background: #1B2234;
+  min-height: 52px;
+  min-width: 235px;
+  width: 40%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+  transition: all 0.4s;
+  align-self: flex-end;
+}
+
+.contato-form input[type="submit"]:hover{
+  background: #26314b;
 }
 
 footer{
