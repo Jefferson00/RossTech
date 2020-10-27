@@ -1,241 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Ross-Tech</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <header>
-            <div class="top-header"></div>
-            <div>
-                <img src="assets/logo.png" alt="logo"/>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="/" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#sobre">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#produtos">Produtos</a>
-                    </li>
-                    <li>
-                        <a href="#parceiros">Parceiros</a>
-                    </li>
-                    <li>
-                        <a href="#governo">Governo</a>
-                    </li>
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <div class="main-img">
-            <div class="main-tittle">
-                <h1>SOLUÇÕES</h1>
-                <p>EM TECNOLOGIA</p>
-            </div>
-            <img src="assets/ilustração.svg" alt="main"/>
+    <title>Ross-Tech</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top-header"></div>
+        <div>
+            <img src="assets/logo.png" alt="logo" />
         </div>
-
-        <div class="destaques">
-            <div class="destaques-cards">
-                <span></span>
-                <h3>Grandes Fabricantes</h3>
-                <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
-            </div>
-            <div class="destaques-cards">
-                <span></span>
-                <h3>Grandes Fabricantes</h3>
-                <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
-            </div>
-            <div class="destaques-cards">
-                <span></span>
-                <h3>Grandes Fabricantes</h3>
-                <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
-            </div>
-            <div class="destaques-cards">
-                <span></span>
-                <h3>Grandes Fabricantes</h3>
-                <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
-            </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a class="active">Home</a>
+                </li>
+                <li>
+                    <a id="btn-sobre">Sobre</a>
+                </li>
+                <li>
+                    <a id="btn-produtos">Produtos</a>
+                </li>
+                <li>
+                    <a id="btn-parceiros">Parceiros</a>
+                </li>
+                <li>
+                    <a id="btn-governo">Governo</a>
+                </li>
+                <li>
+                    <a id="btn-contato">Contato</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="sobre">
-            <div class="sobre-img">
-                <img src="assets/sobre.png" alt="sobre"/>
-                <div class="background-sobre-img"></div>
-                <div class="background-sobre-img-2"></div>
-            </div>
-            <div class="sobre-txt">
-                <h1>Sobre a Empresa</h1>
-                <p>A Ross-Tech atua no segmento de Tecnologia da Informação, oferecendo soluções nas áreas de infra-estrutura, segurança da informação, produtividade e gerenciamento de redes corporativas. Em parceria com fabricantes de referência mundial, oferecemos a mais alta qualidade em produtos e serviços, apresentando soluções integradas em software e hardware, visando otimização de esforços, redução de custos e melhoria dos resultados. Contamos com uma equipe de profissionais altamente qualificados e com larga experiência no mercado, que se dedicam a oferecer soluções criativas para nossos clientes com foco na qualidade, menor custo e rapidez.
-                </p>
-            </div>
+    </header>
+    <div class="main-img">
+        <div class="main-tittle">
+            <h1>SOLUÇÕES</h1>
+            <p>EM TECNOLOGIA</p>
         </div>
+        <img src="assets/ilustração.svg" alt="main" />
+    </div>
 
-        <div class="produtos">
-            <div class="produtos-txt">
-                <h1>Produtos</h1>
-                <p>
-                    Trabalhamos com os melhores produtos do mercado, nos mais variados seguimentos de não sei o que não sei oque lá pipipi popopo. Trabalhamos com os melhores produtos do mercado, nos mais variados seguimentos de não sei o que não sei oque lá pipipi popopo
-                </p>
-            </div>
-            <div class="produtos-container" id="container">
-                <div class="produtos-card-item">
-                    <h3>DESKTOPS</h3>
-                    <img src="assets/computador.png" alt="desktop"/>
-                </div>
-                <div class="produtos-card-item">
-                    <h3>SCANNER</h3>
-                    <img src="assets/scanner.png" alt="desktop"/>
-                </div>
-                <div class="produtos-card-item">
-                    <h3>NOTEBOOK</h3>
-                    <img src="assets/notebook.png" alt="desktop"/>
-                </div>
-                <div class="produtos-card-item">
-                    <h3>SCANNER</h3>
-                    <img src="assets/scanner-2.png" alt="desktop"/>
-                </div>
-                <div class="produtos-card-item">
-                    <h3>DESKTOPS</h3>
-                    <img src="assets/computador.png" alt="desktop"/>
-                </div>
-                <div class="produtos-card-item">
-                    <h3>NOTEBOOK</h3>
-                    <img src="assets/notebook.png" alt="desktop"/>
-                </div>
-                <div class="setas">
-                    <span id="prev"><</span> <span id="next">></span>
-                </div>
-            </div>
-
+    <div class="destaques">
+        <div class="destaques-cards">
+            <span id="fabricantes"></span>
+            <h3>Grandes Fabricantes</h3>
+            <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
         </div>
+        <div class="destaques-cards">
+            <span id="produtos"></span>
+            <h3>Excelentes Produtos</h3>
+            <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
+        </div>
+        <div class="destaques-cards">
+            <span id="ideias"></span>
+            <h3>Ideias Inovadoras</h3>
+            <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
+        </div>
+        <div class="destaques-cards">
+            <span id="suporte"></span>
+            <h3>Suporte Técnico</h3>
+            <p>Trabalhamos com as principais empresas líderes de mercado em tecnologia</p>
+        </div>
+    </div>
 
-        <div class="parceiros">
-            <div class="parceiros-text">
-                <h1>Parceiros</h1>
+    <div class="sobre" id="sobre">
+        <div class="sobre-img">
+            <img src="assets/sobre.png" alt="sobre" />
+            <div class="background-sobre-img"></div>
+            <div class="background-sobre-img-2"></div>
+        </div>
+        <div class="sobre-txt">
+            <h1>Sobre a Empresa</h1>
+            <span class="sub"></span>
+            <p>A Ross-Tech atua no segmento de Tecnologia da Informação, oferecendo soluções nas áreas de
+                infra-estrutura, segurança da informação, produtividade e gerenciamento de redes corporativas. Em
+                parceria com fabricantes de referência mundial, oferecemos a mais alta qualidade em produtos e serviços,
+                apresentando soluções integradas em software e hardware, visando otimização de esforços, redução de
+                custos e melhoria dos resultados. Contamos com uma equipe de profissionais altamente qualificados e com
+                larga experiência no mercado, que se dedicam a oferecer soluções criativas para nossos clientes com foco
+                na qualidade, menor custo e rapidez.
+            </p>
+        </div>
+    </div>
+
+    <div class="produtos" id="produtos">
+        <div class="produtos-txt">
+            <h1>Produtos</h1>
+            <span class="sub"></span>
+            <p>
+                Trabalhamos com os melhores produtos do mercado, nos mais variados seguimentos de não sei o que não sei
+                oque lá pipipi popopo. Trabalhamos com os melhores produtos do mercado, nos mais variados seguimentos de
+                não sei o que não sei oque lá pipipi popopo
+            </p>
+        </div>
+        <div class="produtos-container" id="container">
+            <div class="produtos-card-item">
+                <h3>DESKTOPS</h3>
+                <img src="assets/computador.png" alt="desktop" />
             </div>
-            <div class="parceiros-list">
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/aoc-logo.png" alt="aoc"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/fujitsu-logo.png" alt="fujitsu"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/huawei-logo.png" alt="huawei"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/Lenovo_Global_Corporate_Logo.png" alt="Lenovo"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/NetScout_logo.png" alt="netscoul"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/Nutanix_Logo.png" alt="nutanix"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/Philips-logo.png" alt="philips"/>
-                </div>
-                <div class="parceiros-item">
-                    <img src="assets/parceiros/polycom-logo.png" alt="polycom"/>
-                </div>
+            <div class="produtos-card-item">
+                <h3>SCANNER</h3>
+                <img src="assets/scanner.png" alt="desktop" />
+            </div>
+            <div class="produtos-card-item">
+                <h3>NOTEBOOK</h3>
+                <img src="assets/notebook.png" alt="desktop" />
+            </div>
+            <div class="produtos-card-item">
+                <h3>SCANNER</h3>
+                <img src="assets/scanner-2.png" alt="desktop" />
+            </div>
+            <div class="produtos-card-item">
+                <h3>DESKTOPS</h3>
+                <img src="assets/computador.png" alt="desktop" />
+            </div>
+            <div class="produtos-card-item">
+                <h3>NOTEBOOK</h3>
+                <img src="assets/notebook.png" alt="desktop" />
+            </div>
+            <div class="setas">
+                <span id="prev"></span> 
+                <span id="next"></span>
             </div>
         </div>
 
-        <div class="governo">
-            <div class="governo-img">
-                <img src="assets/governo-2.png" alt="governo"/>
+    </div>
+
+    <div class="parceiros" id="parceiros">
+        <div class="parceiros-text">
+            <h1>Parceiros</h1>
+            <span class="sub"></span>
+        </div>
+        <div class="parceiros-list">
+            <div class="parceiros-item">
+                <img src="assets/parceiros/aoc-logo.png" alt="aoc" />
             </div>
-            <div class="governo-text">
-                <h1>Governo</h1>
-                <p>Trabalhamos com os melhores produtos do mercado,
-                     nos mais variados seguimentos de não sei o
-                      que não sei oque lá pipipi popopo.
-                </p>
-                <button class="btn download">
+            <div class="parceiros-item">
+                <img src="assets/parceiros/fujitsu-logo.png" alt="fujitsu" />
+            </div>
+            <div class="parceiros-item">
+                <img src="assets/parceiros/huawei-logo.png" alt="huawei" />
+            </div>
+            <div class="parceiros-item">
+                <img src="assets/parceiros/Lenovo_Global_Corporate_Logo.png" alt="Lenovo" />
+            </div>
+            <div class="parceiros-item">
+                <img src="assets/parceiros/NetScout_logo.png" alt="netscoul" />
+            </div>
+            <div class="parceiros-item">
+                <img src="assets/parceiros/Nutanix_Logo.png" alt="nutanix" />
+            </div>
+            <div class="parceiros-item">
+                <img src="assets/parceiros/Philips-logo.png" alt="philips" />
+            </div>
+            <div class="parceiros-item">
+                <img src="assets/parceiros/polycom-logo.png" alt="polycom" />
+            </div>
+        </div>
+    </div>
+
+    <div class="governo" id="governo">
+        <div class="governo-img">
+            <img src="assets/governo-2.png" alt="governo" />
+        </div>
+        <div class="governo-text">
+            <h1>Governo</h1>
+            <span class="sub"></span>
+            <p>Trabalhamos com os melhores produtos do mercado,
+                nos mais variados seguimentos de não sei o
+                que não sei oque lá pipipi popopo.
+            </p>
+            <button class="btn download">
+                <a href="assets/governo-2.png" download="filename">
                     Download das Atas
-                </button>
-            </div>
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <div class="contato" id="contato">
+        <div class="contato-text">
+            <h1>Contato</h1>
+            <span class="sub"></span>
+        </div>
+        <div class="contato-form">
+            <p>Nos mande uma mensagem!</p>
+            <form>
+                <fieldset>
+                    <input type="text" placeholder="Nome" id="name" />
+                    <input type="text" placeholder="E-mail" id="email" />
+                    <input type="text" placeholder="Telefone" id="phone" />
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Mensagem" id="mensage"></textarea>
+                    <input type="submit" value="ENTRE EM CONTATO">
+                </fieldset>
+            </form>
+        </div>
+        <div class="contato-video">
+            <video width="1180px" autoplay loop muted>
+                <source src="assets/video/Computer Keyboard - 3188.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
-        <div class="contato">
-            <div class="contato-text">
-                <h1>Contato</h1>
-            </div>
-            <div class="contato-form">
-                <p>Nos mande uma mensagem!</p>
-                <form>
-                    <fieldset>
-                        <input type="text" placeholder="Nome" id="name"/>
-                        <input type="text" placeholder="E-mail" id="email"/>
-                        <input type="text" placeholder="Telefone" id="phone"/>
-                    </fieldset>
-                    <fieldset>
-                        <textarea placeholder="Mensagem" id="mensage"></textarea>
-                        <input type="submit" value="ENTRE EM CONTATO">
-                    </fieldset>
-                </form>
-            </div>
-            <div class="contato-video">
-                <video width="1180px" autoplay loop muted>
-                    <source src="assets/video/Computer Keyboard - 3188.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+    </div>
 
+
+    <footer>
+        <div class="footer-icons">
+            <img src="assets/icons/Facebook_white.png" alt="facebook" />
+            <img src="assets/icons/Instagram_white.png" alt="instagram" />
+            <img src="assets/icons/LinkedIN_white.png" alt="linkedin" />
+            <img src="assets/icons/Vector.png" alt="email" />
         </div>
-        
-
-        <footer>
-            <div class="footer-icons">
-                <img src="assets/icons/Facebook_white.png" alt="facebook"/>
-                <img src="assets/icons/Instagram_white.png" alt="instagram"/>
-                <img src="assets/icons/LinkedIN_white.png" alt="linkedin"/>
-                <img src="assets/icons/Vector.png" alt="email"/>
-            </div>
-            <div class="footer-text">
-                <p>telefone
+        <div class="footer-text">
+            <p>telefone
                 (61) 3202-9393
-                    endereço
+                endereço
                 SCN Quadra 01 Bloco F, Ed. América Office Tower, Sala 501
-                </p>
-                <p>Copyright 2020 Ross-Tech</p>
-            </div>
-        </footer>
+            </p>
+            <p>Copyright 2020 Ross-Tech</p>
+        </div>
+    </footer>
 
-        <script>
-            const prev = document.getElementById("prev");
-            const next = document.getElementById("next");
-            const container = document.getElementById("container");
+    <div id="toTop" class="top">
+        <span></span>
+    </div>
 
-            const itens = document.getElementsByClassName("produtos-card-item")
-            var translated = 0
-            const containerWidth = container.clientWidth
-            prev.addEventListener("click", function () {
-                translated = translated + containerWidth
-                for (i = 0; i < itens.length; i++) {
-                    console.log(translated)
-                    itens[i].style.transform = "translateX("+translated+"px)";
-                }
+    <script>
+        /*Itens dos produtos*/
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+        const container = document.getElementById("container");
+
+        const itens = document.getElementsByClassName("produtos-card-item")
+        var translated = 0
+        const containerWidth = container.clientWidth
+        prev.addEventListener("click", function () {
+            translated = translated + containerWidth
+            for (i = 0; i < itens.length; i++) {
+                console.log(translated)
+                itens[i].style.transform = "translateX(" + translated + "px)";
+            }
+        })
+        next.addEventListener("click", function () {
+            translated = translated - containerWidth
+            for (i = 0; i < itens.length; i++) {
+                console.log(translated)
+                itens[i].style.transform = "translateX(" + translated + "px)";
+            }
+        })
+
+        /*Scroll do menu*/
+        const btnSobre = document.getElementById("btn-sobre");
+        const btnProdutos = document.getElementById("btn-produtos");
+        const btnParceiros = document.getElementById("btn-parceiros");
+        const btnGoverno = document.getElementById("btn-governo");
+        const btnContato = document.getElementById("btn-contato");
+
+        btnSobre.addEventListener('click', function () {
+            scrollToSobre()
+        })
+        btnProdutos.addEventListener('click', function () {
+            scrollToProdutos()
+        })
+        btnParceiros.addEventListener('click', function () {
+            scrollToParceiros()
+        })
+        btnGoverno.addEventListener('click', function () {
+            scrollToGoverno()
+        })
+        btnContato.addEventListener('click', function () {
+            scrollToContato()
+        })
+
+        function scrollToSobre() {
+            document.querySelector('.sobre').scrollIntoView({ behavior: 'smooth' })
+        }
+        function scrollToProdutos() {
+            document.querySelector('.produtos').scrollIntoView({ behavior: 'smooth' })
+        }
+        function scrollToParceiros() {
+            document.querySelector('.parceiros').scrollIntoView({ behavior: 'smooth' })
+        }
+        function scrollToGoverno() {
+            document.querySelector('.governo').scrollIntoView({ behavior: 'smooth' })
+        }
+        function scrollToContato() {
+            document.querySelector('.contato').scrollIntoView({ behavior: 'smooth' })
+        }
+
+        /*Go to Top*/
+        const toTopElement = document.getElementById('toTop')
+
+        function scrolToTop() {
+            window.scroll({
+                top: 0,
+                behavior: 'smooth'
             })
-            next.addEventListener("click", function () {
-                translated = translated - containerWidth
-                for (i = 0; i < itens.length; i++) {
-                    console.log(translated)
-                    itens[i].style.transform = "translateX("+translated+"px)";
-                }
-            })
-        </script>
-    </body>
+        }
+
+        toTopElement.addEventListener('click', function(){
+            scrolToTop()
+        })
+
+        window.onscroll = function () {
+            
+
+            if (window.pageYOffset > window.innerHeight) {
+                toTopElement.style.opacity = 1
+            } else {
+                toTopElement.style.opacity = 0
+            }
+
+        }
+    </script>
+</body>
+
 </html>
