@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap">
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="top-header"></div>
+        <div class="top-header">
+            <p>Telefone  (61) 3202-9393 </p>
+            <p>Endereço   SCN Quadra 01 Bloco F, Ed. América Office Tower, Sala 501</p>
+        </div>
         <div>
             <img src="assets/logo.png" alt="logo" />
         </div>
@@ -127,7 +131,7 @@
                 <img src="assets/notebook.png" alt="desktop" />
             </div>
             <div class="setas">
-                <span id="prev"></span> 
+                <span id="prev"></span>
                 <span id="next"></span>
             </div>
         </div>
@@ -195,13 +199,14 @@
             <p>Nos mande uma mensagem!</p>
             <form>
                 <fieldset>
-                    <input type="text" placeholder="Nome" id="name" />
-                    <input type="text" placeholder="E-mail" id="email" />
-                    <input type="text" placeholder="Telefone" id="phone" />
+                    <input type="text" placeholder="Nome" id="name" required/>
+                    <input type="text" placeholder="E-mail" id="email" required/>
+                    <input type="text" placeholder="Telefone" id="phone" required/>
                 </fieldset>
                 <fieldset>
-                    <textarea placeholder="Mensagem" id="mensage"></textarea>
-                    <input type="submit" value="ENTRE EM CONTATO">
+                    <input type="text" placeholder="Assunto" id="subject" required/>
+                    <textarea placeholder="Mensagem" id="mensage" required></textarea>
+                    <input type="button" value="ENTRE EM CONTATO" onclick="sendEmail()">
                 </fieldset>
             </form>
         </div>
@@ -309,12 +314,12 @@
             })
         }
 
-        toTopElement.addEventListener('click', function(){
+        toTopElement.addEventListener('click', function () {
             scrolToTop()
         })
 
         window.onscroll = function () {
-            
+
 
             if (window.pageYOffset > window.innerHeight) {
                 toTopElement.style.opacity = 1
@@ -323,6 +328,32 @@
             }
 
         }
+
+        ///enviar e-mail
+
+        function sendEmail() {
+            
+            const name = document.getElementById("name").value
+            const email = document.getElementById("email").value
+            const phone = document.getElementById("phone").value
+            const mensage = document.getElementById("mensage").value
+            const subject = document.getElementById("subject").value
+            
+            if(name == "" || email == "" || phone == "" || mensage == "" || subject == ""){
+                alert("Preencha todos os campos!")
+            }else{
+                Email.send({
+                    SecureToken: "d9b3f81f-82fa-4e67-be80-768d2a3d955c",
+                    To: 'jefferson@northware.com.br',
+                    From: "jefferson@northware.com.br",
+                    Subject: subject,
+                    Body: "<html><strong>"+mensage+"</strong><br></br><em>E-mail: "+email+"<br></br> Telefone: "+phone+"<br></br> Nome: "+name+"</em></html>"
+                }).then(
+                    message => alert("mail sent successfully")
+                );
+            }
+        }
+
     </script>
 </body>
 

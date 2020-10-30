@@ -28,6 +28,8 @@
     color: #55575A;
   }
   
+  /*HEADER*/
+
   header{
     background: url('assets/header-1.svg');
     display: flex;
@@ -40,8 +42,21 @@
     width: 100%;
     height: 38px;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     top: 0;
     background: #2E3956;
+    padding-right: 173px;
+  }
+
+  .top-header p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #D2D2D2;
+    margin-left: 73px;
   }
 
   header div img{
@@ -102,6 +117,9 @@
     line-height: 29px;
   }
 
+
+/*DESTAQUES*/
+
 .destaques{
     display: flex;
     width: 80%;
@@ -145,6 +163,9 @@
 .destaques-cards p{
     margin-top: 35px;
 }
+
+
+/*SOBRE*/
 
 .sobre{
     display: flex;
@@ -198,6 +219,9 @@ span.sub{
   height: 5px;
   margin: 11px 0 28px;
 }
+
+
+/*PRODUTOS*/
 
 
 .produtos{
@@ -264,6 +288,9 @@ span.sub{
   height: 35px;
 }
 
+
+/*PARCEIROS*/
+
 .parceiros{
   width: 80%;
   margin: 270px auto 0;
@@ -287,6 +314,8 @@ span.sub{
 .parceiros-item img{
     max-width: 100%;
 }
+
+/*GOVERNO*/
 
 .governo{
   width: 80%;
@@ -326,6 +355,7 @@ span.sub{
   background: #831421;
 }
 
+/*CONTATO*/
 
 .contato{
   width: 80%;
@@ -369,7 +399,7 @@ display: flex;
   min-height: 181px;
 }
 
-.contato-form input[type="submit"]{
+.contato-form input[type="button"]{
   background: #1B2234;
   min-height: 52px;
   min-width: 235px;
@@ -384,7 +414,7 @@ display: flex;
   align-self: flex-end;
 }
 
-.contato-form input[type="submit"]:hover{
+.contato-form input[type="button"]:hover{
   background: #26314b;
 }
 
@@ -392,6 +422,9 @@ display: flex;
   height: 270px;
   overflow: hidden;
 }
+
+
+/*FOOTER*/
 
 footer{
   height: 80px;
