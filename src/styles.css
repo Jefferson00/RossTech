@@ -36,6 +36,8 @@
     justify-content: space-between;
     align-items: center;
     height: 416px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .top-header{
@@ -103,6 +105,11 @@
     justify-content: space-around;
   }
 
+  .main-img img{
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
   .main-tittle{
     margin-right: 20px;
   }
@@ -130,30 +137,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 49px;
 }
 
 .destaques-cards span{
     display: flex;
     width: 139px;
     height: 128px;
+    background-position: center;
     
 }
 
 .destaques-cards span#fabricantes{
   background: url('assets/icons/house.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 .destaques-cards span#produtos{
   background: url('assets/icons/work.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 .destaques-cards span#ideias{
   background: url('assets/icons/ideas.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 .destaques-cards span#suporte{
   background: url('assets/icons/support.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .destaques-cards h3, .destaques-cards p{
@@ -268,6 +281,7 @@ span.sub{
 .setas{
   display: flex;
   justify-content: space-between;
+  grid-area:3 / 1 / span 2/ span 2;
 }
 
 .setas span{
