@@ -154,12 +154,28 @@
 }
 
 @media (max-width: 495px){
+    header{
+        height: 20vh;
+    }
     .top-header p {
         font-size: 8px;
         margin-left: 19px;
     }
     header .logo img {
-        height: 50px;
+        height: 40px;
+    }
+    header.down{
+        height: 46px;
+    }
+    header.on{
+        height: 100vh !important;
+    }
+    .main-img{
+        margin: -10% 5% 0;
+    }
+    .menu-toggle{
+        margin-right: 70px;
+        height: 45px;
     }
     .sobre-txt{
         font-size: 14px;
@@ -167,8 +183,11 @@
     .sobre-img img {
         max-width: 100%;
     }
+    .produtos-container{
+        grid-gap: 34px;
+    }
     .contato-video video {
-        width: 390px;
+        width: 350px;
     }
     .footer-text {
         padding: 0 20px;
@@ -178,9 +197,6 @@
 }
 
 @media (max-width: 375px){
-    header{
-        height: 20vh;
-    }
     header .logo img {
         height: 35px;
     }
