@@ -1,3 +1,19 @@
+//Menu responsivo
+
+let show = true;
+const header = document.getElementById("menu")
+const menuToggle = header.querySelector(".menu-toggle")
+const menuItens = header.querySelector(".menu")
+
+menuToggle.addEventListener("click", () => {
+
+    document.body.style.overflow = show ? "hidden" : "initial"
+    header.classList.toggle("on", show)
+    menuItens.classList.toggle("menuResponsive", show)
+    show = !show
+})
+
+
  /*Itens dos produtos*/
  const prev = document.getElementById("prev");
  const next = document.getElementById("next");
@@ -29,35 +45,56 @@
  const btnContato = document.getElementById("btn-contato");
 
  btnSobre.addEventListener('click', function () {
-     scrollToSobre()
+    /*Remove classes do menu responsivo*/
+    header.classList.remove("on")
+    menuItens.classList.remove("menuResponsive")
+    document.body.style.overflow = "initial" 
+    scrollToSobre()
+     
  })
  btnProdutos.addEventListener('click', function () {
+     /*Remove classes do menu responsivo*/
+    header.classList.remove("on")
+    menuItens.classList.remove("menuResponsive")
+    document.body.style.overflow = "initial" 
      scrollToProdutos()
  })
  btnParceiros.addEventListener('click', function () {
+     /*Remove classes do menu responsivo*/
+    header.classList.remove("on")
+    menuItens.classList.remove("menuResponsive")
+    document.body.style.overflow = "initial" 
      scrollToParceiros()
  })
  btnGoverno.addEventListener('click', function () {
+     /*Remove classes do menu responsivo*/
+    header.classList.remove("on")
+    menuItens.classList.remove("menuResponsive")
+    document.body.style.overflow = "initial" 
      scrollToGoverno()
  })
  btnContato.addEventListener('click', function () {
+     /*Remove classes do menu responsivo*/
+    header.classList.remove("on")
+    menuItens.classList.remove("menuResponsive")
+    document.body.style.overflow = "initial" 
      scrollToContato()
  })
 
  function scrollToSobre() {
-     document.querySelector('.sobre').scrollIntoView({ behavior: 'smooth' })
+     document.querySelector('.sobre').scrollIntoView({ block: "center", behavior: 'smooth' })
  }
  function scrollToProdutos() {
-     document.querySelector('.produtos').scrollIntoView({ behavior: 'smooth' })
+     document.querySelector('.produtos').scrollIntoView({  block: "center", behavior: 'smooth' })
  }
  function scrollToParceiros() {
-     document.querySelector('.parceiros').scrollIntoView({ behavior: 'smooth' })
+     document.querySelector('.parceiros').scrollIntoView({ block: "center", behavior: 'smooth' })
  }
  function scrollToGoverno() {
-     document.querySelector('.governo').scrollIntoView({ behavior: 'smooth' })
+     document.querySelector('.governo').scrollIntoView({ block: "center", behavior: 'smooth' })
  }
  function scrollToContato() {
-     document.querySelector('.contato').scrollIntoView({ behavior: 'smooth' })
+     document.querySelector('.contato').scrollIntoView({ block: "start", behavior: 'smooth' })
  }
 
  /*Go to Top*/
@@ -85,6 +122,28 @@
 
  }
 
+ /// menu fixo ao descer a pagina
+
+ const menu = document.getElementById("menu")
+
+ function scrollDownShowMenuFixed(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    if ((windowTop) > menu.style.height + window.innerHeight) {
+        menu.classList.add('down')
+    }
+ }
+
+ function scrollUpHideMenuFixed() {
+    menu.classList.remove('down')
+}
+
+window.addEventListener('scroll', function () {
+    scrollDownShowMenuFixed()
+    if (window.scrollY === 0 && window.scrollX === 0) {
+        scrollUpHideMenuFixed()
+    }
+})
+
  ///enviar e-mail
 
  function sendEmail() {
@@ -109,3 +168,5 @@
          );
      }
  }
+
+ 
