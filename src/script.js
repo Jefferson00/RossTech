@@ -44,48 +44,83 @@ menuToggle.addEventListener("click", () => {
  const btnGoverno = document.getElementById("btn-governo");
  const btnContato = document.getElementById("btn-contato");
 
+ const elementSobre = document.getElementById("sobre")
+ const elementProdutos = document.getElementById("produtos")
+ const elementParceiros = document.getElementById("parceiros")
+ const elementGoverno = document.getElementById("governo")
+ const elementContato = document.getElementById("contato")
+
  btnSobre.addEventListener('click', function () {
     /*Remove classes do menu responsivo*/
     header.classList.remove("on")
     menuItens.classList.remove("menuResponsive")
     document.body.style.overflow = "initial" 
-    scrollToSobre()
-     
+    if (header.classList.contains("down")){
+        elementSobre.setAttribute("style","scroll-margin-top: 0rem;")
+        scrollToSobre()
+    }else{
+        elementSobre.setAttribute("style","scroll-margin-top: 45rem;")
+        scrollToSobre()
+    }   
  })
  btnProdutos.addEventListener('click', function () {
      /*Remove classes do menu responsivo*/
     header.classList.remove("on")
     menuItens.classList.remove("menuResponsive")
     document.body.style.overflow = "initial" 
-     scrollToProdutos()
+    if (header.classList.contains("down")){
+        elementProdutos.setAttribute("style","scroll-margin-top: 0rem;")
+        scrollToProdutos()
+    }else{
+        elementProdutos.setAttribute("style","scroll-margin-top: 0rem;")
+        scrollToProdutos()
+    }
  })
  btnParceiros.addEventListener('click', function () {
      /*Remove classes do menu responsivo*/
     header.classList.remove("on")
     menuItens.classList.remove("menuResponsive")
     document.body.style.overflow = "initial" 
-     scrollToParceiros()
+    if (header.classList.contains("down")){
+        elementParceiros.setAttribute("style","scroll-margin-top: 0rem;")
+        scrollToParceiros()
+    }else{
+        elementParceiros.setAttribute("style","scroll-margin-top: 45rem;")
+        scrollToParceiros()
+    }
  })
  btnGoverno.addEventListener('click', function () {
      /*Remove classes do menu responsivo*/
     header.classList.remove("on")
     menuItens.classList.remove("menuResponsive")
     document.body.style.overflow = "initial" 
-     scrollToGoverno()
+    if (header.classList.contains("down")){
+        elementGoverno.setAttribute("style","scroll-margin-top: 0rem;")
+        scrollToGoverno()
+    }else{
+        elementGoverno.setAttribute("style","scroll-margin-top: 45rem;")
+        scrollToGoverno()
+    }
  })
  btnContato.addEventListener('click', function () {
      /*Remove classes do menu responsivo*/
     header.classList.remove("on")
     menuItens.classList.remove("menuResponsive")
     document.body.style.overflow = "initial" 
-     scrollToContato()
+    if (header.classList.contains("down")){
+        elementContato.setAttribute("style","scroll-margin-top: 0rem;")
+        scrollToContato()
+    }else{
+        elementContato.setAttribute("style","scroll-margin-top: 20rem;")
+        scrollToContato()
+    }
  })
 
  function scrollToSobre() {
-     document.querySelector('.sobre').scrollIntoView({ block: "center", behavior: 'smooth' })
+     document.querySelector('.sobre').scrollIntoView({ block: "center",  behavior: 'smooth' })
  }
  function scrollToProdutos() {
-     document.querySelector('.produtos').scrollIntoView({  block: "center", behavior: 'smooth' })
+     document.querySelector('.produtos').scrollIntoView({  block: "start", behavior: 'smooth' })
  }
  function scrollToParceiros() {
      document.querySelector('.parceiros').scrollIntoView({ block: "center", behavior: 'smooth' })
@@ -95,6 +130,14 @@ menuToggle.addEventListener("click", () => {
  }
  function scrollToContato() {
      document.querySelector('.contato').scrollIntoView({ block: "start", behavior: 'smooth' })
+ }
+ 
+ function handleCorrectPosition(){
+     const vl = window.innerHeight/2
+     window.scroll({
+         top:vl,
+         behavior:'auto'
+     })
  }
 
  /*Go to Top*/
@@ -128,7 +171,10 @@ menuToggle.addEventListener("click", () => {
 
  function scrollDownShowMenuFixed(){
     const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
-    if ((windowTop) > menu.style.height + window.innerHeight) {
+    console.log(windowTop)
+    console.log(menu.style.height)
+    console.log(window.innerHeight)
+    if ((windowTop) > window.innerHeight+(window.innerHeight/4)) {
         menu.classList.add('down')
     }
  }

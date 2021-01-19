@@ -31,7 +31,7 @@
   /*HEADER*/
 
   header{
-    background: url('assets/header-2.svg');
+    background: url('assets/header-3.svg');
     min-height: 160px;
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,7 @@
     height: 50vh;
     background-repeat: no-repeat;
     background-position: top;
-    transition: all 0.5s;
+    transition: all 1s;
   }
 
   header.on{
